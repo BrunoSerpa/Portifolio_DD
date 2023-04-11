@@ -44,6 +44,15 @@ nav div{
 .contentTitle{
     padding: 0 15px 0 15px;
 }
+
 .tema{
-    margin: auto
+    margin: auto;
+    font: 25px sans-serif;
+    font-weight: 500;
+}
+
+.descricao{
+    color: #6D747C;
+    margin: auto;
+    font: 20px sans-serif;
 }

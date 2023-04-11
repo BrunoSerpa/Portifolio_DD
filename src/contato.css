@@ -1,7 +1,11 @@
 .containerRedes{
     display:flex;
     width: 10%;
-    background-color: antiquewhite;
+}
+.linkRedes{
+    margin: auto;
+    width: 100%;
+    padding-right: 50px;
 }
 .logoRedes{
     width: 100%;

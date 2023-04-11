@@ -1,6 +1,6 @@
 body{
-    margin: auto;
     background-color:  #AEF1E5;
+    margin: auto;
 }
 .content{
     display:flex;
@@ -13,8 +13,8 @@ body{
     flex: 6;
 }
 .imgPerfil{
-    width: 100%;
     border-radius: 0% 0% 25% 0%;
+    width: 100%;
 }
 nav{
     border-bottom: black solid 1px;
@@ -39,4 +39,11 @@ nav div{
     color: #6D747C;
     font-weight: 700;
     text-decoration:underline;    
+}
+
+.contentTitle{
+    padding: 0 15px 0 15px;
+}
+.tema{
+    margin: auto
 }

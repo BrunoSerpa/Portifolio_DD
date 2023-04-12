@@ -8,6 +8,10 @@ body{
 }
 .left{
     flex: 2;
+    border-width: 100%;
+    border-radius: 0 0 10% 0;
+    border-right: #81B3A9 solid 5px;
+    border-bottom: #81B3A9 solid 5px;
 }
 .right{
     flex: 6;
@@ -42,12 +46,13 @@ nav div{
 }
 
 .contentTitle{
-    padding: 0 15px 0 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .tema{
     margin: auto;
-    font: 25px sans-serif;
+    padding-top: 20px;
+    font: 25px sa1ns-serif;
     font-weight: 500;
 }
 

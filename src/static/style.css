@@ -50,16 +50,17 @@ nav div{
 }
 
 .tema{
+    color: black;
+    font: 700 25px sans-serif;
     margin: auto;
     padding-top: 20px;
-    font: 25px sa1ns-serif;
-    font-weight: 500;
 }
 
 .descricao{
     color: #6D747C;
-    margin: auto;
     font: 20px sans-serif;
+    margin: auto;
+    padding-left: 15px;
 }
 
 .descTema h1{

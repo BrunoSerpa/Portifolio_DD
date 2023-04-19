@@ -1,3 +1,4 @@
+/*Content base*/
 body{
     background-color:  #AEF1E5;
     margin: auto;
@@ -6,6 +7,7 @@ body{
     display:flex;
     width: 100%;
 }
+/* Screen Partitions*/
 .left{
     flex: 2;
     border-width: 100%;
@@ -16,10 +18,12 @@ body{
 .right{
     flex: 6;
 }
-.imgPerfil{
+/* ContentWordNavbar */
+.contentImgPerfil img{
     border-radius: 0% 0% 25% 0%;
     width: 100%;
 }
+/* Navbar */
 nav{
     border-bottom: #000000 solid 1px;
     display: flex;
@@ -30,6 +34,7 @@ nav{
 nav div{
     flex: 1;
 }
+/* StyleLinksNavbar */
 .linkNav{   
     color: #000000;
     font-weight: 700;
@@ -44,32 +49,32 @@ nav div{
     font-weight: 700;
     text-decoration:underline;    
 }
-
+/* ContentTitle*/
 .contentTitle{
     padding: 0 15px 15px 15px;
 }
-
-.tema{
+/* Theme */
+.theme{
     color: #000000;
     font: 700 25px sans-serif;
     margin: auto;
     padding-top: 20px;
 }
-
-.descricao{
+/* DescType 1 */
+.descrition{
     color: #6D747C;
     font: 20px sans-serif;
     margin: auto;
     padding-left: 15px;
 }
-
-.descTema h1{
+/* DescType 2 */
+.desc h1{
     margin: auto;
     padding: 0 0 0 10px;
     font-size: 25px;
     color: #000000; 
 }
-.descTema h2{
+.desc h2{
     margin: auto;
     padding: 0 0 0 25px;
     font-size: 20px;

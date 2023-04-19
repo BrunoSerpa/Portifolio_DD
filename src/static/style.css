@@ -21,7 +21,7 @@ body{
     width: 100%;
 }
 nav{
-    border-bottom: black solid 1px;
+    border-bottom: #000000 solid 1px;
     display: flex;
     font: 20px sans-serif;
     padding: 10px;
@@ -31,7 +31,7 @@ nav div{
     flex: 1;
 }
 .linkNav{   
-    color: black;
+    color: #000000;
     font-weight: 700;
     text-decoration:underline;
 }
@@ -50,7 +50,7 @@ nav div{
 }
 
 .tema{
-    color: black;
+    color: #000000;
     font: 700 25px sans-serif;
     margin: auto;
     padding-top: 20px;
@@ -67,7 +67,7 @@ nav div{
     margin: auto;
     padding: 0 0 0 10px;
     font-size: 25px;
-    color: black; 
+    color: #000000; 
 }
 .descTema h2{
     margin: auto;

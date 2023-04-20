@@ -4,30 +4,11 @@ body{
     margin: auto;
 }
 .content{
-    display:flex;
-    width: 100%;
-}
-/* Screen Partitions*/
-.left{
-    flex: 2;
-    border-width: 100%;
-    border-radius: 0 0 10% 0;
-    border-right: #81B3A9 solid 5px;
-    border-bottom: #81B3A9 solid 5px;
-}
-.right{
-    flex: 6;
-}
-/* ContentWordNavbar */
-.contentImgPerfil img{
-    border-radius: 0% 0% 25% 0%;
     width: 100%;
 }
 /* Navbar */
 nav{
-    border-bottom: #000000 solid 1px;
     display: flex;
-    padding: 10px;
     text-align: center;
 }
 nav div{
@@ -35,17 +16,10 @@ nav div{
 }
 /* StyleLinksNavbar */
 .linkNav, .linkNav:any-link:hover{
-    font-weight: 700;
-    text-decoration:underline;}  
-.linkNav, .linkNav:any-link{   
-    color: #000000;
-}
+    font-weight: 700;}
 .linkNav:any-link{
     font-weight: 100;
     text-decoration: none;
-}
-.linkNav:any-link:hover{
-    color: #6D747C;
 }
 /* ContentTitle*/
 .contentTitle{
@@ -79,8 +53,66 @@ h1, h2, a{
     color: #6D747C; 
 }
 
+@media (max-width: 767px){
+    .content{
+        display:block;
+    }
+    /* Img Perfil */
+    .contentImgPerfil{text-align: center;}
+    .contentImgPerfil img{
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        width: 50%;}
+    /* Navbar */
+    nav{
+        padding: 30px 0;
+        align-items: center;
+    }
+    /* StyleLinksNavbar */
+    .linkNav, .linkNav:any-link:hover{
+        font-size: 30px;
+    }
+    .linkNav:any-link{       
+        font-size: 20px;
+        color: #6D747C;
+    }
+
+    .right nav{display: none;}
+}
+
+@media (min-width: 768px){
+    /*Content base*/
+    .content{display:flex}
+    /* Screen Partitions*/
+    .left{
+        flex: 2;
+        border-width: 100%;
+        border-bottom-right-radius: 30px;
+        border-right: #81B3A9 solid 5px;
+        border-bottom: #81B3A9 solid 5px;
+    }
+    .right{flex: 6}
+    /* Img Perfil */
+    .contentImgPerfil img{border-bottom-right-radius: 25px; width: 100%;}
+    /* Navbar */
+    nav{
+        padding: 10px;
+        border-bottom: #000000 solid 1px
+    }
+    /* StyleLinksNavbar */
+    .linkNav, .linkNav:any-link:hover{
+        text-decoration:underline;
+    }
+    .linkNav:any-link:hover{
+        color: #6D747C;
+    }
+    .navMobile{display: none}
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {}
+
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {} 
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){}

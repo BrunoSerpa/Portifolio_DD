@@ -108,6 +108,17 @@ h1, h2, a{
     }
     .navMobile{display: none}
 }
+.logo{
+    position:fixed;
+    width: 5%;
+    right: 10px;
+    bottom: 10px;
+}
+.imgLogo{
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.5;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {}
 

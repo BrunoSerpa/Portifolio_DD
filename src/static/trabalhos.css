@@ -1,1 +1,7 @@
-.center{padding: auto; text-align: center;}
+.project{display: flex; text-align: center}
+.project h1 a:any-link{color: rgb(25, 50, 193); text-decoration: none}
+.project h1 a:hover{color: #6D747C}
+.project .leftRigh{flex:1}
+.project .center{flex:5}
+.project img{width: 100%; border-radius: 2%; border: #00395b solid 2px;}
+.project p{text-align: left;}

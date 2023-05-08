@@ -1,119 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./../static/style.css">
-        <link rel="stylesheet" href="./../static/index.css">
-        <title>Sobre</title>
-    </head>
-    <body>
-        <div class="content">
-            <nav class="navMobile">
-                <div>
-                    <a class="linkNav" href="./trabalhos.html">Trabalhos</a>
-                </div>
-                <div>
-                    <a class="linkNav">Sobre mim</a>
-                </div>
-                <div>
-                    <a class="linkNav" href="./contatos.html">Contato</a>
-                </div>
-            </nav>
-            <!-- Esquerda -->
-            <div class="left">
-                <div class="contentLeft">
-                    <!-- Foto de Perfil -->
-                    <div class="contentImgPerfil"> <img class="imgPerfil" srcset="../static/img/perfil/perfil_300.png 550w, ../static/img/perfil/perfil_450.png 700w, ../static/img/perfil/perfil_500.png 850w" src="../static/img/perfil/perfil_500.png" alt="foto-perfil-gitHub">
-                    </div>
-                    <!-- Temas -->
-                    <div class="contentTitle">
-                        <!-- Ensino -->
-                        <h1 class="theme"> Ensino</h1>
+{% extends 'base.html' %}
 
-                        <div class="desc">
-                            <h1>Técnologo/Superior:</h1>
-                            <h2>Desenvolvimento de Software Multiplataformas (2023 - Atual) <br/> Fatec (Profº Jessen Vidal)</h2>
-                            
-                            <h1>Técnico/Médio:</h1>
-                            <h2>Desenvolvimento de Sistemas (2020 - 2022) <br/> Etec (Profª Ilza Nascimento Pintus)</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Direita -->
-            <div class="right">
-                <!-- Links Navegaveis -->
-                <nav>
-                    <div>
-                        <a class="linkNav" href="./trabalhos.html">Trabalhos</a>
-                    </div>
-                    <div>
-                        <a class="linkNav">Sobre mim</a>
-                    </div>
-                    <div>
-                        <a class="linkNav" href="./contatos.html">Contato</a>
-                    </div>
-                </nav>
-                <!-- Temas -->
-                <div class="contentTitle">
-                    <!-- Características -->
-                    <h1 class="theme"> Como sou</h1>
-                    <div class="skills">
-                        <div>
-                            <div>
-                                <h1>Organizado</h1>
-                            </div>
+{%block linkCss%}
+<link rel="stylesheet" href="./../static/index.css">
+{% endblock %}
 
-                            <div>
-                                <h1>Criativo</h1>
-                            </div>
-                            
-                            <div>
-                                <h1>Colaborador</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h1>Resiliênte</h1>
-                            </div>
-                            <div>
-                                <h1>Trabalho sob pressão</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Habilidades -->
-                    <h1 class="theme"> Minhas Habilidades</h1>
-                    <div class="skills">
-                        <div>
-                            <div>
-                                <h1>HTML5</h1>
-                            </div>
-                            <div>
-                                <h1>CSS3</h1>
-                            </div>
-                            <div>
-                                <h1>Python</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <h1>Flask</h1>
-                            </div>
-                            <div>
-                                <h1>JavaScript</h1>
-                            </div>
-                            <div>
-                                <h1>React Native</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="logo">
-            <div><img class="imgLogo" src="./../static/img/logo.gif" alt="gif_logo"/></div>
+{% block navbar %}
+<div>
+    <a class="linkNav" href="./trabalhos">Trabalhos</a>
+</div>
+<div>
+    <a class="linkNav">Sobre mim</a>
+</div>
+<div>
+    <a class="linkNav" href="./contatos">Contato</a>
+</div>
+{% endblock %}
+
+{% block navbar1 %}
+<div>
+    <a class="linkNav" href="./trabalhos">Trabalhos</a>
+</div>
+<div>
+    <a class="linkNav">Sobre mim</a>
+</div>
+<div>
+    <a class="linkNav" href="./contatos">Contato</a>
+</div>
+{% endblock %}
+
+{% block contentLeft %}
+<div class="contentTitle">
+    <!-- Ensino -->
+    <h1 class="theme"> Ensino</h1>
+
+    <div class="desc">
+        <h1>Técnologo/Superior:</h1>
+        <h2>Desenvolvimento de Software Multiplataformas (2023 - Atual) <br/> Fatec (Profº Jessen Vidal)</h2>
+        
+        <h1>Técnico/Médio:</h1>
+        <h2>Desenvolvimento de Sistemas (2020 - 2022) <br/> Etec (Profª Ilza Nascimento Pintus)</h2>
+    </div>
+</div>
+{% endblock %}
+
+{% block contentRight %}
+<!-- Características -->
+<h1 class="theme"> Como sou</h1>
+<div class="skills">
+    <div>
+        <div>
+            <h1>Organizado</h1>
         </div>
+
+        <div>
+            <h1>Criativo</h1>
         </div>
-    </body>
-</html>
+        
+        <div>
+            <h1>Colaborador</h1>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1>Resiliênte</h1>
+        </div>
+        <div>
+            <h1>Trabalho sob pressão</h1>
+        </div>
+    </div>
+</div>
+<!-- Habilidades -->
+<h1 class="theme"> Minhas Habilidades</h1>
+<div class="skills">
+    <div>
+        <div>
+            <h1>HTML5</h1>
+        </div>
+        <div>
+            <h1>CSS3</h1>
+        </div>
+        <div>
+            <h1>Python</h1>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1>Flask</h1>
+        </div>
+        <div>
+            <h1>JavaScript</h1>
+        </div>
+        <div>
+            <h1>React Native</h1>
+        </div>
+    </div>
+</div>
+{% endblock %}

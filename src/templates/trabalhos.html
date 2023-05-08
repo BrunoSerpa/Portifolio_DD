@@ -1,96 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./../static/style.css">
-        <link rel="stylesheet" href="./../static/trabalhos.css">
-        <title>Sobre</title>
-    </head>
-    <body>
-        <div class="content">
-            <nav class="navMobile">
-                <div>
-                    <a class="linkNav" href="./index.html">Sobre mim</a>
-                </div>
-                <div>
-                    <a class="linkNav">Trabalhos</a>
-                </div>
-                <div>
-                    <a class="linkNav" href="./contatos.html">Contato</a>
-                </div>
-            </nav>
-            <!-- Esquerda -->
-            <div class="left">
-                <div class="contentLeft">
-                    <!-- Foto de Perfil -->
-                    <div class="contentImgPerfil"> <img class="imgPerfil" srcset="../static/img/perfil/perfil_300.png 550w, ../static/img/perfil/perfil_450.png 700w, ../static/img/perfil/perfil_500.png 850w" src="../static/img/perfil/perfil_500.png" alt="foto-perfil-gitHub">
-                    </div>
-                    <!-- Temas -->
-                    <div class="contentTitle">
-                        <!-- Profissões-->
-                        <h1 class="theme">Profissões</h1>
-        
-                        <div class="desc">
-                            <!-- Profissão Atual -->
-                            <h1>Aprendiz  <br/> (Dec, 2022 - atual)</h1>
-                            <h2>Mecânica/Atendimento</h2>
-                            <h2>Bicicletaria SOS ECO BIKE</h2>
-                        </div>
-                        <div class="desc">
-                            <!-- Profissão Anterior -->
-                            <h1>Nenhuma profissão <br/>([...] - Dec, 2022)</h1>
-                            <h2>Nenhuma área<br/>Nenhuma empresa</h2>
-                        </div>
+{% extends 'base.html' %}
 
-                        <!-- Volutario-->
-                        <h1 class="theme">Voluntáriado</h1>
-                        <div class="desc">
-                            <!-- Volutario Atual -->
-                            <h1>Multimidia <br/>(Jan, 2021 - Atual)</h1>
-                            <h2>Multimidia<br/>Igreja Evangélica Pentecostal Deus é Fiel</h2>
-                        </div>
-                    
-                        <div class="desc">
-                            <!-- Volutario Anterior -->
-                            <h1>Nenhum Voluntáriado <br/>([...] - Jan, 2021)</h1>
-                            <h2>Nenhuma área<br/>Nenhuma empresa</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Direita -->
-            <div class="right">
-                <!-- Links Navegaveis -->
-                <nav>
-                    <div>
-                        <a class="linkNav">Trabalhos</a>
-                    </div>
-                    <div>
-                        <a class="linkNav" href="./index.html">Sobre mim</a>
-                    </div>
-                    <div>
-                        <a class="linkNav" href="./contatos.html">Contato</a>
-                    </div>
-                </nav>
-                <!-- Conteúdo -->
-                <div>
-                    <h1 class="theme">Projetos</h1>
-                    <div class="project">
-                        <div class="leftRigh"></div>
-                        <div class="center">
-                            <h1><a href="https://github.com/BrunoSerpa/Desafio02_DD">Renderizando</a> (30/04/2023)</h1>
-                            <img src="../static/img/projetos/Renderizando.gif" alt="imagem_projeto">
-                            <p><b>Tecnologias Utilizadas:</b> HTML5, CSS3</p>
-                        </div>
-                        <div class="leftRigh"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="logo">
-                <div><img class="imgLogo" src="./../static/img/logo.gif" alt="gif_logo"/></div>
-            </div>
-        </div>
-    </body>
-</html>
+{% block linkCss %}
+<link rel="stylesheet" href="./../static/trabalhos.css">
+{% endblock %}
+
+{% block navbar %}
+<div>
+    <a class="linkNav" href="./index">Sobre mim</a>
+</div>
+<div>
+    <a class="linkNav">Trabalhos</a>
+</div>
+<div>
+    <a class="linkNav" href="./contatos">Contato</a>
+</div>
+{% endblock %}
+
+{% block navbar1 %}
+<div>
+    <a class="linkNav">Trabalhos</a>
+</div>
+<div>
+    <a class="linkNav" href="./index">Sobre mim</a>
+</div>
+<div>
+    <a class="linkNav" href="./contatos">Contato</a>
+</div>
+{% endblock %}
+
+{% block contentLeft %}
+<!-- Profissões-->
+<h1 class="theme">Profissões</h1>
+
+<div class="desc">
+    <!-- Profissão Atual -->
+    <h1>Aprendiz  <br/> (Dec, 2022 - atual)</h1>
+    <h2>Mecânica/Atendimento</h2>
+    <h2>Bicicletaria SOS ECO BIKE</h2>
+</div>
+<div class="desc">
+    <!-- Profissão Anterior -->
+    <h1>Nenhuma profissão <br/>([...] - Dec, 2022)</h1>
+    <h2>Nenhuma área<br/>Nenhuma empresa</h2>
+</div>
+<!-- Volutario-->
+<h1 class="theme">Voluntáriado</h1>
+<div class="desc">
+    <!-- Volutario Atual -->
+    <h1>Multimidia <br/>(Jan, 2021 - Atual)</h1>
+    <h2>Multimidia<br/>Igreja Evangélica Pentecostal Deus é Fiel</h2>
+</div>
+
+<div class="desc">
+    <!-- Volutario Anterior -->
+    <h1>Nenhum Voluntáriado <br/>([...] - Jan, 2021)</h1>
+    <h2>Nenhuma área<br/>Nenhuma empresa</h2>
+</div>
+{% endblock %}
+
+{% block contentRight %}
+<h1 class="theme">Projetos</h1>
+<div class="project">
+    <div class="leftRigh"></div>
+    <div class="center">
+        <h1><a href="https://github.com/BrunoSerpa/Desafio02_DD">Renderizando</a> (30/04/2023)</h1>
+        <img src="../static/img/projetos/Renderizando.gif" alt="imagem_projeto">
+        <p><b>Tecnologias Utilizadas:</b> HTML5, CSS3</p>
+    </div>
+    <div class="leftRigh"></div>
+</div>
+{% endblock %}

@@ -31,9 +31,8 @@ nav div{flex: 1}
     /* Navbar */
     .right nav{display: none}
     nav{padding: 30px 0}
-    /* StyleLinksNavbar */
     .linkNav, .linkNav:any-link:hover{font-size: 30px}
-    .linkNav:any-link{font-size: 20px; color: #6D747C}
+    .linkNav:any-link{font-size: 20px; color: #51516c}
 }
 @media (min-width: 768px){
     .content{display:flex}
@@ -45,9 +44,8 @@ nav div{flex: 1}
     /* Navbar */
     .navMobile{display: none}
     nav{border-bottom: #000000 solid 3px; padding: 10px 0}
-    /* StyleLinksNavbar */
     .linkNav, .linkNav:any-link:hover{text-decoration:underline}
-    .linkNav:any-link:hover{color: #6D747C}
+    .linkNav:any-link:hover{color: #51516c}
     /* Screen Partitions*/
     .left{border-bottom: 5px solid #81B3A9; border-right: 5px solid #81B3A9; border-bottom-right-radius: 50px; flex: 1}
 }

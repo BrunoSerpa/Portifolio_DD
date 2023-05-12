@@ -35,39 +35,21 @@ nav div{flex: 1}
     .linkNav, .linkNav:any-link:hover{font-size: 30px}
     .linkNav:any-link{font-size: 20px; color: #6D747C}
 }
-
 @media (min-width: 768px){
-    /*Content base*/
     .content{display:flex}
-    /* Screen Partitions*/
-    .left{
-        flex: 2;
-        border-width: 100%;
-        border-bottom-right-radius: 30px;
-        border-right: #81B3A9 solid 5px;
-        border-bottom: #81B3A9 solid 5px;
-    }
-    .right{flex: 6}
     /* Img Perfil */
-    .contentImgPerfil img{border-bottom-right-radius: 25px; width: 100%;}
-    /* Navbar */
-    nav{
-        padding: 10px;
-        border-bottom: #000000 solid 1px
-    }
-    /* StyleLinksNavbar */
-    .linkNav, .linkNav:any-link:hover{
-        text-decoration:underline;
-    }
-    .linkNav:any-link:hover{
-        color: #6D747C;
-    }
+    .contentImgPerfil img{border-bottom-right-radius: 50px; width: 100%}
+    .right{flex: 3}
     /* Logo */
-    .logo{
-        width: 5%;
-    }
-
+    .logo{width: 5%}
+    /* Navbar */
     .navMobile{display: none}
+    nav{border-bottom: #000000 solid 3px; padding: 10px 0}
+    /* StyleLinksNavbar */
+    .linkNav, .linkNav:any-link:hover{text-decoration:underline}
+    .linkNav:any-link:hover{color: #6D747C}
+    /* Screen Partitions*/
+    .left{border-bottom: 5px solid #81B3A9; border-right: 5px solid #81B3A9; border-bottom-right-radius: 50px; flex: 1}
 }
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {}

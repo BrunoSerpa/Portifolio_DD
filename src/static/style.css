@@ -1,6 +1,6 @@
 /* General Style */
 *{color: #000000; font: 20px "Lucida Sans"}
-body{background-color: #AEF1E5}
+body{background-color: #AEF1E5; padding-bottom: 10px;}
 body, h1, h2, a, p{margin: auto}
 .descrition, .desc h2{color: #51516c}
 .theme, .desc h1, .linkNav{font-size: 25px;}

@@ -1,69 +1,24 @@
-/*Content base*/
-body{
-    background-color:  #AEF1E5;
-    margin: auto;
-}
-.content{
-    width: 100%;
-}
-/* Navbar */
-nav{
-    display: flex;
-    text-align: center;
-}
-nav div{
-    flex: 1;
-}
-/* StyleLinksNavbar */
-.linkNav, .linkNav:any-link:hover{
-    font-weight: 700;}
-.linkNav:any-link{
-    font-weight: 100;
-    text-decoration: none;
-}
-/* ContentTitle*/
-.contentTitle{
-    padding: 0 15px 15px 15px;
-}
-/* Texts General*/
-h1, h2, a, p{
-    color:#000000;
-    font-family: sans-serif;
-    font-size: 20px;
-    margin: auto;
-}
-/* Theme */
-.theme{
-    font-weight: 700;
-    font-size: 25px;
-    padding-top: 20px;
-}
-/* DescType 1 */
-.descrition{
-    color: #6D747C;
-    padding-left: 15px;
-}
-/* DescType 2 */
-.desc h1{
-    padding: 0 0 0 10px;
-    font-size: 25px; 
-}
-.desc h2{
-    padding: 0 0 0 25px;
-    color: #6D747C; 
-}
+/* General Style */
+*{background-color: #AEF1E5; color: #000000; font: 20px "Lucida Sans"}
+body, h1, h2, a, p{margin: auto}
+.descrition, .desc h2{color: #51516c}
+.theme, .desc h1, .linkNav{font-size: 25px;}
+.content{width: 100%}
+.theme{font-weight: 700}
 /* Logo */
-.logo{
-    position:fixed;
-    right: 10px;
-    bottom: 10px;
-}
-.imgLogo{
-    width: 100%;
-    border-radius: 50%;
-    opacity: 0.5;
-}
-
+.logo{position:fixed; right: 10px; bottom: 10px}
+.imgLogo{border-radius: 50%; opacity: 0.5; width: 100%}
+/* Navbar */
+nav{display: flex; text-align: center}
+nav div{flex: 1}
+.linkNav, .linkNav:any-link:hover{font-weight: 700;}
+.linkNav:any-link{font-weight: 100; text-decoration: none;}
+/* Padding */
+.contentTitle{padding: 0 15px 15px 15px}
+.theme{padding-top: 20px}
+.descrition{padding-left: 15px}
+.desc h1{padding-left: 10px}
+.desc h2{padding-left: 25px}
 @media (max-width: 767px){
     .content{
         display:block;
@@ -80,11 +35,8 @@ h1, h2, a, p{
         align-items: center;
     }
     /* StyleLinksNavbar */
-    .linkNav, .linkNav:any-link:hover{
-        font-size: 30px;
-    }
-    .linkNav:any-link{       
-        font-size: 20px;
+    .linkNav, .linkNav:any-link:hover{font-size: 30px;}
+    .linkNav:any-link{font-size: 20px;
         color: #6D747C;
     }
     /* Logo */

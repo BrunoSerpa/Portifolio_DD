@@ -11,7 +11,15 @@
     <body>
         <div class="content">
             <nav class="navMobile">
-                {% block navbar %}{% endblock %}
+                <div>
+                    <a class="linkNav" {{nav[0]}}>{{nav[1]}}</a>
+                </div>
+                <div>
+                    <a class="linkNav" {{nav[2]}}>{{nav[3]}}</a>
+                </div>
+                <div>
+                    <a class="linkNav" {{nav[4]}}>{{nav[5]}}</a>
+                </div>
             </nav>
             <!-- Esquerda -->
             <div class="left">
@@ -29,7 +37,15 @@
             <div class="right">
                 <!-- Links Navegaveis -->
                 <nav>
-                    {% block navbar1 %}{% endblock %}
+                    <div>
+                        <a class="linkNav" {{nav[0]}}>{{nav[1]}}</a>
+                    </div>
+                    <div>
+                        <a class="linkNav" {{nav[2]}}>{{nav[3]}}</a>
+                    </div>
+                    <div>
+                        <a class="linkNav" {{nav[4]}}>{{nav[5]}}</a>
+                    </div>
                 </nav>
                 <!-- Temas -->
                 <div class="contentTitle">

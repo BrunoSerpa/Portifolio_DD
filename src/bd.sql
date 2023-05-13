@@ -6,7 +6,7 @@ create table Ensino(
     des_ensi varchar(200) not null,
     ano_ensi char(11) not null,
     loc_ensi varchar(200) not null
-)
+);
 /* Trabalhos.html */
 create table Profissao(
 	key_prof int auto_increment primary key,
@@ -22,8 +22,8 @@ create table Voluntariado(
 );
 create table Projeto(
 	key_proj int auto_increment primary key,
-    link_proj varchar(200) not null
+    link_proj varchar(200) not null,
     tit_proj varchar(200) not null,
     dat_proj char(23) not null,
-    tec_proj char(200) not null,
+    tec_proj char(200) not null
 );

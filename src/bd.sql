@@ -1,4 +1,12 @@
 use Portifolio;
+/* Index.html */
+create table Ensino(
+	key_ensi int auto_increment primary key,
+    tit_ensi varchar(200) not null,
+    des_ensi varchar(200) not null,
+    ano_ensi char(11) not null,
+    loc_ensi varchar(200) not null
+)
 /* Trabalhos.html */
 create table Profissao(
 	key_prof int auto_increment primary key,

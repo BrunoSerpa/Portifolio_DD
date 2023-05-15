@@ -25,5 +25,6 @@ create table Projeto(
     link_proj varchar(200) not null,
     tit_proj varchar(200) not null,
     dat_proj char(23) not null,
+    img_proj varchar(200) not null,
     tec_proj char(200) not null
 );

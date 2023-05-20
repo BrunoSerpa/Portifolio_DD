@@ -17,7 +17,7 @@ def sobre():
 def trabalhos():
     nav=['href=/sobre','Sobre mim', ' ','Trabalhos','href=/contatos','Contato']
     title="Trabalhos"
-    return render_template("trabalhos.html", title=title, nav=nav, trabalhoJson=fileJson('trabalho'), voluntariadoJson=fileJson('voluntariado'), projetoJson=fileJson('projetos'))
+    return render_template("trabalhos.html", title=title, nav=nav, trabalhoJson=fileJson('trabalhos'), voluntariadoJson=fileJson('voluntariados'), projetoJson=fileJson('projetos'))
 
 @app.route("/contatos")
 def contatos():

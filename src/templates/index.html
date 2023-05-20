@@ -10,11 +10,10 @@
     <h1 class="theme"> Ensino</h1>
 
     <div class="desc">
-        <h1>Técnologo/Superior:</h1>
-        <h2>Desenvolvimento de Software Multiplataformas (2023 - Atual) <br/> Fatec (Profº Jessen Vidal)</h2>
-        
-        <h1>Técnico/Médio:</h1>
-        <h2>Desenvolvimento de Sistemas (2020 - 2022) <br/> Etec (Profª Ilza Nascimento Pintus)</h2>
+        {% for atributo in ensinoJson %}
+        <h1>{{atributo["title"]}}:</h1>
+        <h2>{{atributo["subtitle"]}} ({{atributo["date"]}}) <br/> {{atributo["local"]}}</h2>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

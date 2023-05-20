@@ -24,3 +24,9 @@ def contatos():
     nav=['href=/trabalhos','Trabalhos', '', 'Contato','href=/sobre','Sobre mim']
     title='Contatos'
     return render_template("contatos.html", title=title, nav=nav)
+
+import json
+def fileJson(title):
+    with open(f"static/json/{title}.json") as openFile:
+        jsonFile=openFile.read()
+        return json.loads(jsonFile.encode("latin_1").decode("utf-8"))

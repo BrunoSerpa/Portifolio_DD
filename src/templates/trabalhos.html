@@ -9,18 +9,21 @@
 <h1 class="theme">Profissões</h1>
 
 <div class="desc">
-    <!-- Profissão Atual -->
-    <h1>Aprendiz  <br/> (Dec, 2022 - Atual)</h1>
-    <h2>Mecânica/Atendimento</h2>
-    <h2>Bicicletaria SOS ECO BIKE</h2>
+    {% for atributo in trabalhoJson %}
+    <h1>{{atributo["title"]}}  <br/> ({{atributo["date"]}})</h1>
+    <h2>{{atributo["area"]}}</h2>
+    <h2>{{atributo["local"]}}</h2>
+    {% endfor %}
 </div>
 
 <!-- Volutario-->
 <h1 class="theme">Voluntáriado</h1>
 <div class="desc">
-    <!-- Volutario Atual -->
-    <h1>Multimidia <br/>(Jan, 2021 - Atual)</h1>
-    <h2>Multimidia<br/>Igreja Evangélica Pentecostal Deus é Fiel</h2>
+    {% for atributo in voluntariadoJson %}
+    <h1>{{atributo["title"]}}  <br/> ({{atributo["date"]}})</h1>
+    <h2>{{atributo["area"]}}</h2>
+    <h2>{{atributo["local"]}}</h2>
+    {% endfor %}
 </div>
 {% endblock %}
 
@@ -29,9 +32,11 @@
 <div class="project">
     <div class="leftRigh"></div>
     <div class="center">
-        <h1><a href="https://github.com/BrunoSerpa/Desafio02_DD" target="_blank">Renderizando</a> (30/04/2023)</h1>
-        <img src="./static/img/projetos/Renderizando.gif" alt="imagem_projeto">
-        <p><b>Tecnologias Utilizadas:</b> HTML5, CSS3</p>
+        {% for atributo in projetoJson %}
+        <h1><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</h1>
+        <img src="{{atributo['linkImg']}}" alt="imagem_projeto">
+        <p><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
+        {% endfor %}
     </div>
     <div class="leftRigh"></div>
 </div>

@@ -5,19 +5,19 @@ app = Flask("__name__")
 def home():
     nav=['href=/trabalhos','Trabalhos',' ','Sobre mim', 'href=/contatos','Contato']
     title='Bem vindo!!'
-    return render_template("index.html", title=title, nav=nav)
+    return render_template("index.html", title=title, nav=nav, ensinoJson=fileJson('ensino'))
 
 @app.route("/sobre")
 def sobre():
     nav=['href=/trabalhos','Trabalhos',' ','Sobre mim', 'href=/contatos','Contato']
     title='Quem Sou'
-    return render_template("index.html", title=title, nav=nav)
+    return render_template("index.html", title=title, nav=nav, ensinoJson=fileJson('ensino'))
 
 @app.route("/trabalhos")
 def trabalhos():
     nav=['href=/sobre','Sobre mim', ' ','Trabalhos','href=/contatos','Contato']
     title="Trabalhos"
-    return render_template("trabalhos.html", title=title, nav=nav)
+    return render_template("trabalhos.html", title=title, nav=nav, trabalhoJson=fileJson('trabalho'), voluntariadoJson=fileJson('voluntariado'), projetoJson=fileJson('projetos'))
 
 @app.route("/contatos")
 def contatos():

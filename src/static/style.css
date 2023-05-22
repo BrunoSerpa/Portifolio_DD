@@ -4,7 +4,7 @@ body{background-color: #AEF1E5; padding-bottom: 10px;}
 body, h1, h2, a, p{margin: auto}
 .descrition, .desc h2{color: #51516c}
 .content{width: 100%}
-.theme{font-weight: 700}
+.theme, .titleProject > a{font-weight: 700}
 /* Logo */
 .logo{position:fixed; right: 10px; bottom: 10px}
 .imgLogo{border-radius: 50%; opacity: 0.5; width: 100%}
@@ -40,7 +40,7 @@ nav div{flex: 1}
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
     *, .linkNav:any-link{font-size: 20px}
-    .theme, .desc h1{font-size: 25px;}
+    .theme, .desc h1, .titleProject, .titleProject > a{font-size: 25px;}
     .linkNav, .linkNav:any-link:hover{font-size: 30px}
     /* Padding */
     .contentTitle{padding: 0 15px 15px 15px}
@@ -55,7 +55,7 @@ nav div{flex: 1}
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     *, .linkNav:any-link{font-size: 20px}
-    .theme, .desc h1{font-size: 25px;}
+    .theme, .desc h1, .titleProject, .titleProject > a{font-size: 25px;}
     .linkNav, .linkNav:any-link:hover{font-size: 30px}
     /* Padding */
     .contentTitle{padding: 0 15px 15px 15px}
@@ -70,7 +70,7 @@ nav div{flex: 1}
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
     * {font-size: 20px}
-    .theme, .desc h1, .linkNav{font-size: 25px;}
+    .theme, .desc h1, .titleProject, .titleProject > a, .linkNav{font-size: 25px;}
     /* Padding */
     .contentTitle{padding: 0 15px 15px 15px}
     .theme{padding-top: 20px}
@@ -84,7 +84,7 @@ nav div{flex: 1}
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
     * {font-size: 20px}
-    .theme, .desc h1, .linkNav{font-size: 25px;}
+    .theme, .desc h1, .titleProject, .titleProject > a, .linkNav{font-size: 25px;}
     /* Padding */
     .contentTitle{padding: 0 15px 15px 15px}
     .theme{padding-top: 20px}
@@ -98,7 +98,7 @@ nav div{flex: 1}
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
     * {font-size: 20px}
-    .theme, .desc h1, .linkNav{font-size: 25px;}
+    .theme, .desc h1, .titleProject, .titleProject > a,.linkNav{font-size: 25px;}
     /* Padding */
     .contentTitle{padding: 0 15px 15px 15px}
     .theme{padding-top: 20px}

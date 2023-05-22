@@ -5,5 +5,19 @@
         "date":"30/04/2023",
         "linkImg":"./static/img/projetos/Renderizando.gif",
         "tecnology":"HTML5, CSS3"
+    },
+    {
+        "linkProject":"https://github.com/BrunoSerpa/Desafio_Faculdade_Unes_PW",
+        "title":"Universidade UNES",
+        "date":"08/04/2023",
+        "linkImg":"https://github.com/BrunoSerpa/Desafio_Faculdade_Unes_PW/raw/main/Doc/faculdadeUnes.gif?raw=true",
+        "tecnology":"HTML5, CSS3, Flask, MySql, SQL"
+    },
+    {
+        "linkProject":"https://github.com/BrunoSerpa/Desafio02_DD",
+        "title":"Interação do Flask com o Forms",
+        "date":"30/04/2023",
+        "linkImg":"https://github.com/BrunoSerpa/Desafio02_DD/raw/main/Doc/Forms.gif?raw=true",
+        "tecnology":"HTML5, CSS3, Flask"
     }
 ]

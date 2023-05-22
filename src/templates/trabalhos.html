@@ -33,9 +33,9 @@
     <div class="leftRigh"></div>
     <div class="center">
         {% for atributo in projetoJson %}
-        <h1><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</h1>
+        <p class="titleProject"><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</p>
         <img src="{{atributo['linkImg']}}" alt="imagem_projeto">
-        <p><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
+        <p class="tecnologyProject"><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
         {% endfor %}
     </div>
     <div class="leftRigh"></div>

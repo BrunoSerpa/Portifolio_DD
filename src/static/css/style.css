@@ -1,110 +1,363 @@
 /* General Style */
-*{color: #000000; font-family: "Lucida Sans"}
-body{background-color: #AEF1E5; padding-bottom: 10px;}
-body, h1, h2, a, p{margin: auto}
-.descrition, .desc h2{color: #51516c}
-.content{width: 100%}
-.theme, .titleProject > a{font-weight: 700}
+*{
+    color: #000000;
+    font-family: "Lucida Sans"
+}
+   
+body{
+    background-color: #AEF1E5;
+    padding-bottom: 10px
+}
+
+body,
+h1,
+h2,
+a,
+p{
+    margin: auto
+}
+
+.descrition,
+.desc h2{
+    color: #51516c
+}
+
+.content{
+    width: 100%
+}
+
+.theme,
+.titleProject > a{
+    font-weight: 700
+}
+
 /* Logo */
-.logo{position:fixed; right: 10px; bottom: 10px}
-.imgLogo{border-radius: 50%; opacity: 0.5; width: 100%}
+.logo{
+    bottom: 10px;
+    position:fixed;
+    right: 10px;
+}
+
+.imgLogo{
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 100%
+}
+
 /* Navbar */
-nav{align-items: center; display: flex; text-align: center}
-nav div{flex: 1}
-.linkNav, .linkNav:any-link:hover{font-weight: 700}
-.linkNav:any-link{font-weight: 100; text-decoration: none}
+nav{
+    align-items: center;
+    display: flex;
+    text-align: center
+}
+
+nav div{
+    flex: 1
+}
+
+.linkNav,
+.linkNav:any-link:hover{
+    font-weight: 700
+}
+
+.linkNav:any-link{
+    font-weight: 100;
+    text-decoration: none
+}
+
 /* Mobile Style */
 @media (max-width: 767px){
-    .content{display:block}
+    .content{
+        display:block
+    }
+
     /* Img Perfil */
-    .contentImgPerfil{text-align: center}
-    .contentImgPerfil img{border-radius: 0 0 25px 25px; width: 50%}
+    .contentImgPerfil{
+        text-align: center
+    }
+
+    .contentImgPerfil img{
+        border-radius: 0 0 25px 25px;
+        width: 50%
+    }
+
     /* Navbar */
-    .right nav{display: none}
-    nav{padding: 30px 0}
-    .linkNav:any-link{color: #51516c}
+    .right nav{
+        display: none
+    }
+
+    nav{
+        padding: 30px 0
+    }
+
+    .linkNav:any-link{
+        color: #51516c
+    }
 }
+
 @media (min-width: 768px){
-    .content{display:flex}
+    .content{
+        display:flex
+    }
+
     /* Img Perfil */
-    .contentImgPerfil img{border-bottom-right-radius: 50px; width: 100%}
-    .right{flex: 3}
+    .contentImgPerfil img{
+        border-bottom-right-radius: 50px;
+        width: 100%
+    }
+
+    .right{
+        flex: 3
+    }
+
     /* Navbar */
-    .navMobile{display: none}
-    nav{border-bottom: #000000 solid 3px; padding: 10px 0}
-    .linkNav, .linkNav:any-link:hover{text-decoration:underline}
-    .linkNav:any-link:hover{color: #51516c}
+    .navMobile{
+        display: none
+    }
+
+    nav{
+        border-bottom: #000000 solid 3px;
+        padding: 10px 0
+    }
+
+    .linkNav,
+    .linkNav:any-link:hover{
+        text-decoration:underline
+    }
+
+    .linkNav:any-link:hover{
+        color: #51516c
+    }
+
     /* Screen Partitions*/
-    .left{border-bottom: 5px solid #81B3A9; border-right: 5px solid #81B3A9; border-bottom-right-radius: 50px; flex: 1}
+    .left{
+        border-bottom: 5px solid #81B3A9;
+        border-right: 5px solid #81B3A9;
+        border-bottom-right-radius: 50px;
+        flex: 1
+    }
 }
+
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-    *, .textSkills, .linkNav:any-link{font-size: 20px}
-    .theme, .desc h1, .titleProject, .titleProject > a{font-size: 25px;}
-    .linkNav, .linkNav:any-link:hover{font-size: 30px}
+    /* Font-Size */
+    *,
+    .textSkills,
+    .linkNav:any-link{
+        font-size: 20px
+    }
+
+    .theme,
+    .desc h1,
+    .titleProject,
+    .titleProject > a{
+        font-size: 25px
+    }
+
+    .linkNav,
+    .linkNav:any-link:hover{
+        font-size: 30px
+    }
+
     /* Padding */
-    .contentTitle{padding: 0 15px 15px 15px}
-    .theme{padding-top: 20px}
-    .descrition{padding-left: 15px}
-    .desc h1{padding-left: 10px}
-    .desc h2{padding-left: 25px}
+    .contentTitle{
+        padding: 0 15px 15px 15px
+    }
+
+    .theme{
+        padding-top: 20px
+    }
+
+    .descrition{
+        padding-left: 15px
+    }
+
+    .desc h1{
+        padding-left: 10px
+    }
+
+    .desc h2{
+        padding-left: 25px
+    }
+
     /* Logo */
-    .logo{width: 10%}
+    .logo{
+        width: 10%
+    }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
-    *, .textSkills, .linkNav:any-link{font-size: 20px}
-    .theme, .desc h1, .titleProject, .titleProject > a{font-size: 25px;}
-    .linkNav, .linkNav:any-link:hover{font-size: 30px}
+    /* Font-Size */
+    *,
+    .textSkills,
+    .linkNav:any-link{
+        font-size: 20px
+    }
+
+    .theme,
+    .desc h1,
+    .titleProject,
+    .titleProject > a{
+        font-size: 25px
+    }
+
+    .linkNav,
+    .linkNav:any-link:hover{
+        font-size: 30px
+    }
+
     /* Padding */
-    .contentTitle{padding: 0 15px 15px 15px}
-    .theme{padding-top: 20px}
-    .descrition{padding-left: 15px}
-    .desc h1{padding-left: 10px}
-    .desc h2{padding-left: 25px}
+    .contentTitle{
+        padding: 0 15px 15px 15px
+    }
+
+    .theme{
+        padding-top: 20px
+    }
+
+    .descrition{
+        padding-left: 15px
+    }
+
+    .desc h1{
+        padding-left: 10px
+    }
+
+    .desc h2{
+        padding-left: 25px
+    }
+
     /* Logo */
-    .logo{width: 10%}
+    .logo{
+        width: 10%
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
-    *, .textSkills {font-size: 20px}
-    .theme, .desc h1, .titleProject, .titleProject > a, .linkNav{font-size: 25px;}
+    /* Font-Size */
+    *,
+    .textSkills {
+        font-size: 20px
+    }
+
+    .theme,
+    .desc h1,
+    .titleProject,
+    .titleProject > a,
+    .linkNav{
+        font-size: 25px
+    }
+
     /* Padding */
-    .contentTitle{padding: 0 15px 15px 15px}
-    .theme{padding-top: 20px}
-    .descrition{padding-left: 15px}
-    .desc h1{padding-left: 10px}
-    .desc h2{padding-left: 25px}
+    .contentTitle{
+        padding: 0 15px 15px 15px
+    }
+
+    .theme{
+        padding-top: 20px
+    }
+
+    .descrition{
+        padding-left: 15px
+    }
+
+    .desc h1{
+        padding-left: 10px
+    }
+
+    .desc h2{
+        padding-left: 25px
+    }
+
     /* Logo */
-    .logo{width: 5%}
+    .logo{
+        width: 5%
+    }
 }
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
-    *, .textSkills {font-size: 20px}
-    .theme, .desc h1, .titleProject, .titleProject > a, .linkNav{font-size: 25px;}
+    /* Font-Size */
+    *,
+    .textSkills {
+        font-size: 20px
+    }
+
+    .theme,
+    .desc h1,
+    .titleProject,
+    .titleProject > a,
+    .linkNav{
+        font-size: 25px
+    }
+
     /* Padding */
-    .contentTitle{padding: 0 15px 15px 15px}
-    .theme{padding-top: 20px}
-    .descrition{padding-left: 15px}
-    .desc h1{padding-left: 10px}
-    .desc h2{padding-left: 25px}
+    .contentTitle{
+        padding: 0 15px 15px 15px
+    }
+
+    .theme{
+        padding-top: 20px
+    }
+
+    .descrition{
+        padding-left: 15px
+    }
+
+    .desc h1{
+        padding-left: 10px
+    }
+
+    .desc h2{
+        padding-left: 25px
+    }
+
     /* Logo */
-    .logo{width: 5%}
+    .logo{
+        width: 5%
+    }
 }
 
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-    *, .textSkills {font-size: 20px}
-    .theme, .desc h1, .titleProject, .titleProject > a,.linkNav{font-size: 25px;}
+    *,
+    .textSkills{
+        font-size: 20px
+    }
+
+    .theme,
+    .desc h1,
+    .titleProject,
+    .titleProject > a,
+    .linkNav{
+        font-size: 25px
+    }
+
     /* Padding */
-    .contentTitle{padding: 0 15px 15px 15px}
-    .theme{padding-top: 20px}
-    .descrition{padding-left: 15px}
-    .desc h1{padding-left: 10px}
-    .desc h2{padding-left: 25px}
+    .contentTitle{
+        padding: 0 15px 15px 15px
+    }
+
+    .theme{
+        padding-top: 20px
+    }
+
+    .descrition{
+        padding-left: 15px
+    }
+
+    .desc h1{
+        padding-left: 10px
+    }
+
+    .desc h2{
+        padding-left: 25px
+    }
+
     /* Logo */
-    .logo{width: 5%}
+    .logo{
+        width: 5%
+    }
 }

@@ -1,4 +1,21 @@
-.skills{background-color: #EDFFFC; border: black solid 1px;border-radius: 20px ;}
-.skills div{display: flex; padding: 10px 0;}
-.skills div div{flex: 1; display: block; text-align: center; }
-.skills h1{font-weight: 500; color: #6D747C;}
+.skills{
+    background-color: #EDFFFC;
+    border: black solid 1px;
+    border-radius: 20px 
+}
+
+.skills div{
+    display: flex;
+    padding: 10px 0
+}
+
+.skills div div{
+    display: block;
+    flex: 1;
+    text-align: center
+}
+
+.skills h1{
+    color: #6D747C;
+    font-weight: 500
+}

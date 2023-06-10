@@ -1,12 +1,14 @@
 .containerRedes{
     display:flex;
-    width: 10%;
+    width: 10%
 }
+
 .linkRedes{
-    width: 100%;
     padding-right: 50px;
+    width: 100%
 }
+
 .logoRedes{
-    width: 100%;
     padding-right: 50px;
+    width: 100%
 }

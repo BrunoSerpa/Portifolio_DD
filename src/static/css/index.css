@@ -1,6 +1,6 @@
 .skills{
-    background-color: #EDFFFC;
-    border: black solid 1px;
+    background-color: var(--branco);
+    border: var(--preto) solid 1px;
     border-radius: 20px 
 }
 
@@ -16,6 +16,6 @@
 }
 
 .skills h1{
-    color: #6D747C;
+    color: var(--cinza);
     font-weight: 500
 }

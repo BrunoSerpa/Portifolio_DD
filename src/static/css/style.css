@@ -127,7 +127,7 @@ nav div{
 
     nav{
         border-bottom: var(--preto) solid 3px;
-        padding: 10px 0
+         padding: 10px 0
     }
 
     .linkNav,
@@ -140,10 +140,13 @@ nav div{
     }
 
     /* Screen Partitions*/
-    .left{
+    .left {
+        flex: 1;
+    }
+    .contentLeft{
         border-bottom: 5px solid var(--contorno);
         border-right: 5px solid var(--contorno);
         border-bottom-right-radius: 50px;
-        flex: 1
+        min-width: 50px;
     }
 }

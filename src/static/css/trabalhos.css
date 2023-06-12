@@ -4,12 +4,12 @@
 }
 
 .project a:any-link{
-    color: rgb(25, 50, 193);
+    color: var(--azul);
     text-decoration: none
 }
 
 .project a:hover{
-    color: #6D747C
+    color: var(--cinza)
 }
 
 .leftRigh{
@@ -23,7 +23,7 @@
 .project img{
     width: 100%;
     border-radius: 2%;
-    border: #00395b solid 2px
+    border: var(--azul) solid 2px
 }
 
 .tecnologyProject{

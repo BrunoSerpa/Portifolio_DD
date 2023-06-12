@@ -1,11 +1,19 @@
+/* CORES */
+:root{
+    --fundo: #AEF1E5; 
+    --preto: #000000;
+    --cinza: #51516c;
+    --contorno: #81B3A9; 
+}
+
 /* General Style */
 *{
-    color: #000000;
+    color: var(--preto);
     font-family: "Lucida Sans"
 }
    
 body{
-    background-color: #AEF1E5;
+    background-color:var(--fundo);
     padding-bottom: 10px
 }
 
@@ -19,7 +27,7 @@ p{
 
 .descrition,
 .desc h2{
-    color: #51516c
+    color: var(--cinza)
 }
 
 .content{
@@ -91,7 +99,7 @@ nav div{
     }
 
     .linkNav:any-link{
-        color: #51516c
+        color: var(--cinza)
     }
 }
 
@@ -116,7 +124,7 @@ nav div{
     }
 
     nav{
-        border-bottom: #000000 solid 3px;
+        border-bottom: var(--preto) solid 3px;
         padding: 10px 0
     }
 
@@ -126,13 +134,13 @@ nav div{
     }
 
     .linkNav:any-link:hover{
-        color: #51516c
+        color: var(--cinza)
     }
 
     /* Screen Partitions*/
     .left{
-        border-bottom: 5px solid #81B3A9;
-        border-right: 5px solid #81B3A9;
+        border-bottom: 5px solid var(--contorno);
+        border-right: 5px solid var(--contorno);
         border-bottom-right-radius: 50px;
         flex: 1
     }

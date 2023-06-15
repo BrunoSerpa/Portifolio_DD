@@ -4,28 +4,28 @@
     *,
     .textSkills,
     .linkNav:any-link{
-        font-size: 20px
+        font-size: 15px
     }
 
     .theme,
     .desc h1,
     .titleProject,
     .titleProject > a{
-        font-size: 25px
+        font-size: 20px
     }
 
     .linkNav,
     .linkNav:any-link:hover{
-        font-size: 30px
+        font-size: 18px
     }
 
     /* Padding */
     .contentTitle{
-        padding: 0 15px 15px 15px
+        padding: 0 5px 5px 5px
     }
 
     .theme{
-        padding-top: 20px
+        padding-top: 30px
     }
 
     .descrition{
@@ -33,16 +33,16 @@
     }
 
     .desc h1{
-        padding-left: 10px
+        padding-left: 15px
     }
 
     .desc h2{
-        padding-left: 25px
+        padding-left: 30px
     }
 
     /* Logo */
     .logo{
-        width: 10%
+        width: 12%
     }
 }
 

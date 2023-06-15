@@ -110,14 +110,13 @@ nav div{
         display:flex
     }
 
-    /* Img Perfil */
     .contentImgPerfil img{
         border-bottom-right-radius: 50px;
         width: 100%
     }
 
     .right{
-        flex: 3
+        width: 60%;
     }
 
     /* Navbar */
@@ -139,14 +138,13 @@ nav div{
         color: var(--cinza)
     }
 
-    /* Screen Partitions*/
     .left {
-        flex: 1;
+        width: 40%;
     }
     .contentLeft{
         border-bottom: 5px solid var(--contorno);
         border-right: 5px solid var(--contorno);
         border-bottom-right-radius: 50px;
-        min-width: 50px;
+        min-height: 450px;
     }
 }

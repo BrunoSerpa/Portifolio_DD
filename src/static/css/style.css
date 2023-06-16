@@ -116,7 +116,7 @@ nav div{
     }
 
     .right{
-        width: 60%;
+        width: 80%;
     }
 
     /* Navbar */
@@ -139,12 +139,13 @@ nav div{
     }
 
     .left {
-        width: 40%;
+        width: 30%;
     }
     .contentLeft{
         border-bottom: 5px solid var(--contorno);
         border-right: 5px solid var(--contorno);
         border-bottom-right-radius: 50px;
         min-height: 450px;
+        padding-bottom: 20px;
     }
 }

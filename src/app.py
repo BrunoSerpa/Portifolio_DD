@@ -26,7 +26,10 @@ def contatos():
     return render_template("contatos.html", title=title, nav=nav)
 
 import json
+import codecs
+
 def fileJson(title):
-    with open(f"./src/static/json/{title}.json") as openFile:
-        jsonFile=openFile.read()
-        return json.loads(jsonFile.encode("latin_1").decode("utf-8"))
+    with codecs.open(f"./src/static/json/{title}.json", "r", encoding="latin_1") as jsonFile:
+        content = jsonFile.read()
+        decoded_content = content.encode("latin_1").decode("utf-8")
+    return json.loads(decoded_content)

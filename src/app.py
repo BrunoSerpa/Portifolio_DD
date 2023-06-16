@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-app = Flask("__name__")
+app = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -27,6 +27,6 @@ def contatos():
 
 import json
 def fileJson(title):
-    with open(f"static/json/{title}.json") as openFile:
+    with open(f"./src/static/json/{title}.json") as openFile:
         jsonFile=openFile.read()
         return json.loads(jsonFile.encode("latin_1").decode("utf-8"))

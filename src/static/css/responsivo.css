@@ -182,28 +182,24 @@
 
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
+    
     /* Font-Size */
     *,
-    .textSkills,
-    .linkNav:any-link{
-        font-size: 15px
+    .textSkills {
+        font-size: 22px
     }
 
     .theme,
     .desc h1,
     .titleProject,
-    .titleProject > a{
-        font-size: 20px
-    }
-
-    .linkNav,
-    .linkNav:any-link:hover{
-        font-size: 18px
+    .titleProject > a,
+    .linkNav{
+        font-size: 28px
     }
 
     /* Padding */
     .contentTitle{
-        padding: 0 5px 5px 5px
+        padding: 0 15px 15px 15px
     }
 
     .theme{

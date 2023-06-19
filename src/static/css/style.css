@@ -1,11 +1,11 @@
 /* CORES */
 :root{
-    --azul: #00395b;
+    --azul: #00155b;
     --branco:#EDFFFC;
-    --fundo: #AEF1E5; 
+    --fundo: #e9f9f6; 
     --preto: #000000;
-    --cinza: #51516c;
-    --contorno: #81B3A9; 
+    --cinza: #3c3c51;
+    --contorno: #384e49; 
 }
 
 /* General Style */

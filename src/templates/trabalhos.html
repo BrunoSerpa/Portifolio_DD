@@ -28,14 +28,28 @@
 {% endblock %}
 
 {% block contentRight %}
+<h1 class="theme">Projetos API</h1>
+<div class="project">
+    <div class="leftRigh"></div>
+    <div class="center">
+        {% for atributo in projetoAPIJson %}
+            <p class="titleProject"><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</p>
+            <img src="{{atributo['linkImg']}}" alt="imagem_projeto_{{atributo['title']}}">
+            <p class="tecnologyProject"><b>Descrição:</b> {{atributo['descProject']}}</p>
+            <p class="tecnologyProject"><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
+            <p class="tecnologyProject"><b>Minhas Contribuições:</b> {{atributo['personalContributions']}}</p>
+        {% endfor %}
+    </div>
+    <div class="leftRigh"></div>
+</div>
 <h1 class="theme">Projetos</h1>
 <div class="project">
     <div class="leftRigh"></div>
     <div class="center">
         {% for atributo in projetoJson %}
-        <p class="titleProject"><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</p>
-        <img src="{{atributo['linkImg']}}" alt="imagem_projeto_{{atributo['title']}}">
-        <p class="tecnologyProject"><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
+            <p class="titleProject"><a href="{{atributo['linkProject']}}" target="_blank">{{atributo['title']}}</a> ({{atributo['date']}})</p>
+            <img src="{{atributo['linkImg']}}" alt="imagem_projeto_{{atributo['title']}}">
+            <p class="tecnologyProject"><b>Tecnologias Utilizadas:</b> {{atributo['tecnology']}}</p>
         {% endfor %}
     </div>
     <div class="leftRigh"></div>

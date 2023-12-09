@@ -1,0 +1,20 @@
+[
+    {
+        "linkProject":"https://github.com/equipedevo/API_2",
+        "title":"HERMEZ",
+        "date":"04/12/2023",
+        "linkImg":"https://github.com/equipedevo/API_2/assets/110677265/3d3ecf50-0e57-4ee3-8d8b-2b3518f525ca",
+        "tecnology":"REACT, HTML5, CSS3, SQL, JavaScript",
+        "personalContributions":"Dev Team e Front-End",
+        "descProject":"Esse foi o API do segundo semestre de DSM na FATEC. O Hermez é um sistema de gerenciamento de chamados voltado para empresas no ramo da tecnologia."
+    },
+    {
+        "linkProject":"https://github.com/equipedevo/API_1",
+        "title":"CICLOVALE",
+        "date":"04/06/2023",
+        "linkImg":"https://github.com/equipedevo/API_1/raw/main/doc/sprint/Site_final.gif?raw=true",
+        "tecnology":"HTML5, CSS3, Flask, Python, SQL, JavaScript",
+        "personalContributions":"Scrum Master e Front-End",
+        "descProject":"Esse foi o API do primeiro semestre de DSM na FATEC. O CICOVALE (Central Informativa de COVID longa do Vale do Paraíba) é um site que possibilita ver e comparar dados sobre o impacto da COVID longa através de fontes públicas do Sistema Único de Saúde (SUS)"
+    }
+]

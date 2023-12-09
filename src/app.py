@@ -11,13 +11,13 @@ def home():
 def sobre():
     nav=['href=/trabalhos','Trabalhos',' ','Home', 'href=/contatos','Contato']
     title='Quem Sou'
-    return render_template("index.html", title=title, nav=nav, ensinoJson=fileJson('ensino'))
+    return render_template("index.html", title=title, nav=nav, ensinoJson=fileJson('ensino'), hobbiesJson=fileJson('hobbie'))
 
 @app.route("/trabalhos")
 def trabalhos():
     nav=['href=/sobre','Home', ' ','Trabalhos','href=/contatos','Contato']
     title="Trabalhos"
-    return render_template("trabalhos.html", title=title, nav=nav, trabalhoJson=fileJson('trabalhos'), voluntariadoJson=fileJson('voluntariados'), projetoJson=fileJson('projetos'))
+    return render_template("trabalhos.html", title=title, nav=nav, trabalhoJson=fileJson('trabalhos'), voluntariadoJson=fileJson('voluntariados'), projetoAPIJson=fileJson('projetosAPI'), projetoJson=fileJson('projetos'))
 
 @app.route("/contatos")
 def contatos():

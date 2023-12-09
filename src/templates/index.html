@@ -11,8 +11,8 @@
 
     <div class="desc">
         {% for atributo in ensinoJson %}
-        <h1>{{atributo["title"]}}:</h1>
-        <h2>{{atributo["subtitle"]}} ({{atributo["date"]}}) <br/> {{atributo["local"]}}</h2>
+            <h1>{{atributo["title"]}}:</h1>
+            <h2>{{atributo["subtitle"]}} ({{atributo["date"]}}) <br/> {{atributo["local"]}}</h2>
         {% endfor %}
     </div>
 </div>
@@ -69,5 +69,12 @@
             <h1 class="textSkills">React Native</h1>
         </div>
     </div>
+</div>
+<h1 class="theme"> Meus Hobbies</h1>
+<div class="desc">
+    {% for atributo in hobbiesJson %}
+    <h1>{{atributo["title"]}}</h1>
+    <h2>{{atributo["desctitle"]}}</h2>
+    {% endfor %}
 </div>
 {% endblock %}

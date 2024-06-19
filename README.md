@@ -137,10 +137,10 @@ Minhas contribuições no projeto foram como membro da equipe de desenvolvimento
 - Vanguarda
 - Faculdade de Tecnologia de São José dos Campos - Prof. Jessen Vidal
 
-### Visão do Projeto (Equipe Devo)
+### Visão do Projeto
 Para jornalistas que desejam ver os efeitos das sequelas da COVID-19 e encontram dificuldades em achar informações sobre a COVID longa. O CICOVALE (Central Informativa de COVID longa do Vale do Paraíba) é um site que possibilita ver e comparar dados sobre o impacto da COVID longa através de fontes públicas do Sistema Único de Saúde (SUS). Diferentemente de outras pesquisas relacionadas, o nosso produto possibilita a facilidade e interatividade da visão sobre os dados da COVID longa.
 
-### Tecnologias adotadas na solução (Equipe Devo)
+### Tecnologias adotadas na solução
 - [Figma](http://www.figma.com): Prototipagem
 - [GitHub](https://github.com/): Versionamento e documentação
 - [Jira](https://www.atlassian.com/software/jira): Organização de tarefas

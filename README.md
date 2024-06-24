@@ -1,12 +1,8 @@
-[Sobre o Desafio](#sobre) | [Como Usar](#comoUsar) | [Portfólio de APIs](#portfolioAPIs)
+[Como Usar](#comoUsar) | [Portfólio de APIs](#portfolioAPIs)
 
 # Portfólio Pessoal
 
-<span id="sobre"></span>
-
-# Sobre o Desafio
-
-Através das dicas e métodos ensinados pelo Prof. Fabrício Galende Marques de Carvalho, deverá ser feito um portfólio pessoal web.
+Olá, meu nome é Bruno Serpa Pereira Carvalho e, atualmente, sou aluno da Fatec de São José dos Campos e estou cursando o Tecnólogo de Desenvolvimento de Softwares Multiplataforma. Este é o meu Portifólio com os meus principais projetos.
 
 ## Conteúdos do `doc/`:
 - Wireframe: O protótipo do site
@@ -59,7 +55,6 @@ deactivate
 <span id="portfolioAPIs"></span>
 
 # Portifólio de API's
-### Bruno Serpa Pereira Carvalho
 
 ## [CRTL A](https://github.com/equipe-javali/API_3): 2024-1
 
